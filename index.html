@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+
+    <!-- font awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="app">
+        <h1 id="musicName">Over The Horizon</h1>
+        <h4 id="artistName">Samsung</h4>
+
+        <div class="image">
+            <img src="" alt="">
+        </div>
+
+        <div class="audio">
+            <audio>
+                <source src="./music/Over_the_horizon.mp3">
+            </audio>
+        </div>
+
+        <div class="control">
+            <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+            <i class="fa-solid fa-play main-btn" id="play" title="Play/pause"></i>
+            <i class="fa-solid fa-forward" id="next" title="Next"></i>
+        </div>
+
+        <p>Developer Mahmood Hassan Rameem</p>
+    </section>
+
+
+    <!-- local js -->
+    <script src="./app.js"></script>
+</body>
+</html>

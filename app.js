@@ -6,6 +6,10 @@ var play = document.getElementById("play");
 var prev = document.getElementById("prev");
 var next = document.getElementById("next");
 
+var curTime = document.getElementById("curTime");
+var finalTime = document.getElementById("finalTime");
+var progress = document.getElementById("progress");
+
 
 // music list
 const musicList = [
@@ -52,12 +56,19 @@ const musicList = [
     },
 ]
 
+
+// load music
+
+
 const loadMusic = (musicList) => {
     musicName.innerHTML = musicList.name;
     artistName.innerHTML = musicList.artist;
     music.src = musicList.src;
     image.src = musicList.imgSrc;
 }
+
+
+// for play button
 
 
 var playState = false;
@@ -88,7 +99,7 @@ play.addEventListener("click", () => {
 
 
 
-
+// for next & previous buttons
 
 var index = 0
 const nextMusic = () => {
@@ -105,6 +116,46 @@ const prevMusic = () => {
 
 next.addEventListener("click", nextMusic);
 prev.addEventListener("click", prevMusic);
+
+
+
+// for time & progress
+
+music.addEventListener("timeupdate", (e) => {
+    // console.log(e);
+
+    const {currentTime, duration} = e.srcElement;
+    var progressCount = (currentTime / duration) * 100;
+    progress.style.width = `${progressCount}%`;
+
+
+    // for final time
+    var minute_duration = Math.floor(duration / 60);
+    var second_duration = Math.floor(duration % 60);
+
+    if(second_duration < 10){
+        second_duration = `0${second_duration}`
+    }
+    
+    if(duration){
+        finalTime.innerHTML = `${minute_duration} : ${second_duration}`;
+    }
+
+
+    // for current time
+    var currentTimeMinute = Math.floor(currentTime / 60);
+    var currentTimeSecond = Math.floor(currentTime % 60);
+
+    if(currentTimeSecond < 10){
+        currentTimeSecond = `0${currentTimeSecond}`
+    }
+
+    if(currentTime){
+        curTime.innerHTML = `${currentTimeMinute} : ${currentTimeSecond}`;
+    }
+})
+
+
 
 window.onload = () =>{
     loadMusic(musicList[0]);

@@ -49,6 +49,13 @@ const musicList = [
     },
 
     {
+        name : "Agar Tum Sath Ho",
+        artist : "Arijit Singh, Alka Yagnik",
+        src : "./music/agar_tum_sath_ho.mp3",
+        imgSrc : "./img/agar_tum_sath_ho.jpg"
+    },
+
+    {
         name : "Tere Liye",
         artist : "Sreya Ghosal, Atif Aslam",
         src : "./music/tere_liye.mp3",

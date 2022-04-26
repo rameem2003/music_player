@@ -14,6 +14,13 @@ var progress = document.getElementById("progress");
 // music list
 const musicList = [
     {
+        name : "রমজানের ওই রোজার শেষে",
+        artist : "Momtaj begum, Sabina yasmin",
+        src : "./music/romjaner_oi_rojar_sheshe_elo_khushir_eid.mp3",
+        imgSrc : "./img/elo_khusir_eid.jpg"
+    },
+
+    {
         name : "স্বপ্ন যাবে বাড়ি আমার",
         artist : "Grameenphone",
         src : "./music/shopno_jabe_bari.mp3",
@@ -49,6 +56,20 @@ const musicList = [
     },
 
     {
+        name : "তোমারে দেখিল",
+        artist : "Habib Wahid, Najmun Munia Nanci",
+        src : "./music/tomare_dekhilo.mp3",
+        imgSrc : "./img/tomare_dekhilo.jpg"
+    },
+
+    {
+        name : "লিখিনি প্রেমের চিঠি",
+        artist : "Sabina Yasmin, Khalid Hassan Milu",
+        src : "./music/likhini_premeri_chithi.mp3",
+        imgSrc : "./img/likhini_premer_chithi.jpg"
+    },
+
+    {
         name : "Agar Tum Sath Ho",
         artist : "Arijit Singh, Alka Yagnik",
         src : "./music/agar_tum_sath_ho.mp3",
@@ -61,6 +82,27 @@ const musicList = [
         src : "./music/tere_liye.mp3",
         imgSrc : "./img/tere_liye.jpg"
     },
+
+    {
+        name : "অপরাধী",
+        artist : "Arman Alif",
+        src : "./music/oporadhi_arman_alif.mp3",
+        imgSrc : "./img/oporadhi.jpg",
+    },
+    
+    {
+        name : "নেশা",
+        artist : "Arman Alif",
+        src : "./music/nesha_arman_alif.mp3",
+        imgSrc : "./img/nesha.jpg",
+    },
+    
+    {
+        name : "আম্মাজান আম্মাজান",
+        artist : "Ayub Bacchu",
+        src : "./music/ammajan_ayub_bacchu.mp3",
+        imgSrc : "./img/ammajan_ammajan.jpg",
+    }
 ]
 
 

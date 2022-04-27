@@ -1,6 +1,8 @@
+var app = document.querySelector(".app");
 var musicName = document.getElementById("musicName");
 var artistName = document.getElementById("artistName");
 var music = document.querySelector("audio");
+var wave = document.getElementById("wave");
 var image = document.querySelector("img");
 var play = document.getElementById("play");
 var prev = document.getElementById("prev");
@@ -9,6 +11,9 @@ var next = document.getElementById("next");
 var curTime = document.getElementById("curTime");
 var finalTime = document.getElementById("finalTime");
 var progress = document.getElementById("progress");
+// var range = document.getElementById("range");
+
+
 
 
 // music list
@@ -127,6 +132,8 @@ const playMusic = () => {
     music.play();
     play.classList.replace("fa-play", "fa-pause");
     image.classList.add("anim");
+    wave.style.display = "flex";
+    app.classList.add("app-background");
 }
 
 const pauseMusic = () => {
@@ -134,6 +141,8 @@ const pauseMusic = () => {
     music.pause();
     play.classList.replace("fa-pause", "fa-play");
     image.classList.remove("anim");
+    wave.style.display = "none";
+    app.classList.remove("app-background");
 }
 
 play.addEventListener("click", () => {
@@ -144,6 +153,11 @@ play.addEventListener("click", () => {
         playMusic();
     }
 })
+
+// for volume
+// range.addEventListener("mousemove", () => {
+//     music.volume = range.value / 100;
+// })
 
 
 

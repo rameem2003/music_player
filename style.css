@@ -118,7 +118,7 @@ h4{
     margin: 0 auto;
     z-index: 2;
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -154,6 +154,10 @@ h4{
     box-shadow: -1px 7px 12px 6px rgba(0,0,0,0.75);
 }
 
+.app .timeline .progress-bar input[type="range"]{
+    width: 100%;
+}
+
 .app .timeline .progress-bar .progress{
     position: absolute;
     top: 0;
@@ -162,9 +166,24 @@ h4{
     border-radius: 8px;
     background-color: black;
 }
-.app .control{
-    margin: 20px 0;
+
+.app .timeline .volume{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
+
+.app .timeline .volume span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.app .timeline .volume input[type="range"]{
+    width: 80%;
+}
+
+
 
 .app .control i{
     width: 45px;
@@ -242,16 +261,16 @@ h4{
     }
 
     .app h1{
-        font-size: 22px;
+        font-size: 23px;
     }
 
     .app h4{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .app .image{
-        width: 150px;
-        height: 150px;
+        width: 195px;
+        height: 195px;
         border-radius: 50%;
         margin: 0 auto;
     }

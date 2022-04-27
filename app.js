@@ -11,7 +11,7 @@ var next = document.getElementById("next");
 var curTime = document.getElementById("curTime");
 var finalTime = document.getElementById("finalTime");
 var progress = document.getElementById("progress");
-// var range = document.getElementById("range");
+var range = document.getElementById("range");
 
 
 
@@ -134,6 +134,7 @@ const playMusic = () => {
     image.classList.add("anim");
     wave.style.display = "flex";
     app.classList.add("app-background");
+    volume();
 }
 
 const pauseMusic = () => {
@@ -155,9 +156,10 @@ play.addEventListener("click", () => {
 })
 
 // for volume
-// range.addEventListener("mousemove", () => {
-//     music.volume = range.value / 100;
-// })
+
+function volume(){
+    music.volume = range.value / 100;
+}
 
 
 
@@ -217,6 +219,7 @@ music.addEventListener("timeupdate", (e) => {
         curTime.innerHTML = `${currentTimeMinute} : ${currentTimeSecond}`;
     }
 })
+
 
 
 

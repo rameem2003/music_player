@@ -2,6 +2,7 @@ var app = document.querySelector(".app");
 var musicName = document.getElementById("musicName");
 var artistName = document.getElementById("artistName");
 var music = document.querySelector("audio");
+var musicNumber =document.getElementById("musicNumber");
 var wave = document.getElementById("wave");
 var image = document.querySelector("img");
 var play = document.getElementById("play");
@@ -16,10 +17,11 @@ var range = document.getElementById("range");
 
 
 
+
 // music list
 const musicList = [
     {
-        name : "রমজানের ওই রোজার শেষে",
+        name : "এলো খুশির ঈদ",
         artist : "Momtaj begum, Sabina yasmin",
         src : "./music/romjaner_oi_rojar_sheshe_elo_khushir_eid.mp3",
         imgSrc : "./img/elo_khusir_eid.jpg"
@@ -163,19 +165,20 @@ function volume(){
 
 
 
-
 // for next & previous buttons
 
 var index = 0
 const nextMusic = () => {
     index = (index + 1) % musicList.length;
     loadMusic(musicList[index]);
+    musicNumber.innerHTML = `${index + 1} of ${musicList.length}`;
     playMusic();
 }
 
 const prevMusic = () => {
     index = ((index - 1) + musicList.length) % musicList.length;
     loadMusic(musicList[index]);
+    musicNumber.innerHTML = `${index + 1} of ${musicList.length}`;
     playMusic();
 }
 
@@ -225,4 +228,8 @@ music.addEventListener("timeupdate", (e) => {
 
 window.onload = () =>{
     loadMusic(musicList[0]);
+    // index = (index + 1) % musicList.length;
+
+    // index = 1 + index;
+    musicNumber.innerHTML = `${index + 1} of ${musicList.length}`;
 }

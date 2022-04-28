@@ -37,7 +37,7 @@ const musicList = [
     {
         name : "Over The Horizon",
         artist : "Samsung",
-        src : "./music/over_the_horizon.mp3",
+        src : "./music/Over_the_horizon.mp3",
         imgSrc : "./img/over_the_horizon.jpg"
     },
 

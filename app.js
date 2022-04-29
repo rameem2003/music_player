@@ -77,6 +77,20 @@ const musicList = [
     },
 
     {
+        name : "Kun Faya Kun",
+        artist : "A R Rahman",
+        src : "./music/kun_faya_kun.mp3",
+        imgSrc : "./img/kun_faya_kun.jpg"
+    },
+
+    {
+        name : "Khwaja Mere Khwaja",
+        artist : "A R Rahman",
+        src : "./music/khwaja_mere_khwaja.mp3",
+        imgSrc : "./img/khwaja_mere_khwaja.jpg"
+    },
+
+    {
         name : "Agar Tum Sath Ho",
         artist : "Arijit Singh, Alka Yagnik",
         src : "./music/agar_tum_sath_ho.mp3",

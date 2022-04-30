@@ -22,7 +22,7 @@ var range = document.getElementById("range");
 const musicList = [
     {
         name : "এলো খুশির ঈদ",
-        artist : "Momtaj begum, Sabina yasmin",
+        artist : "Momtaj begum & Sabina yasmin",
         src : "./music/romjaner_oi_rojar_sheshe_elo_khushir_eid.mp3",
         imgSrc : "./img/elo_khusir_eid.jpg"
     },
@@ -64,44 +64,30 @@ const musicList = [
 
     {
         name : "তোমারে দেখিল",
-        artist : "Habib Wahid, Najmun Munia Nanci",
+        artist : "Habib Wahid & Najmun Munia Nanci",
         src : "./music/tomare_dekhilo.mp3",
         imgSrc : "./img/tomare_dekhilo.jpg"
     },
 
     {
+        name : "সেই তুমি",
+        artist : "Ayub Bacchu",
+        src : "./music/shei_tumi.mp3",
+        imgSrc : "./img/shei_tumi.jpg",
+    },
+
+    {
+        name : "ভালো আছি ভালো থেকো",
+        artist : "Andrew Kishore & Kanak Chapa",
+        src : "./music/valo_achi_valo_theko.mp3",
+        imgSrc : "./img/valo_achi_valo_theko.jpg",
+    },
+
+    {
         name : "লিখিনি প্রেমের চিঠি",
-        artist : "Sabina Yasmin, Khalid Hassan Milu",
+        artist : "Sabina Yasmin & Khalid Hassan Milu",
         src : "./music/likhini_premeri_chithi.mp3",
         imgSrc : "./img/likhini_premer_chithi.jpg"
-    },
-
-    {
-        name : "Kun Faya Kun",
-        artist : "A R Rahman",
-        src : "./music/kun_faya_kun.mp3",
-        imgSrc : "./img/kun_faya_kun.jpg"
-    },
-
-    {
-        name : "Khwaja Mere Khwaja",
-        artist : "A R Rahman",
-        src : "./music/khwaja_mere_khwaja.mp3",
-        imgSrc : "./img/khwaja_mere_khwaja.jpg"
-    },
-
-    {
-        name : "Agar Tum Sath Ho",
-        artist : "Arijit Singh, Alka Yagnik",
-        src : "./music/agar_tum_sath_ho.mp3",
-        imgSrc : "./img/agar_tum_sath_ho.jpg"
-    },
-
-    {
-        name : "Tere Liye",
-        artist : "Sreya Ghosal, Atif Aslam",
-        src : "./music/tere_liye.mp3",
-        imgSrc : "./img/tere_liye.jpg"
     },
 
     {
@@ -123,7 +109,37 @@ const musicList = [
         artist : "Ayub Bacchu",
         src : "./music/ammajan_ayub_bacchu.mp3",
         imgSrc : "./img/ammajan_ammajan.jpg",
+    },
+
+    {
+        name : "Kun Faya Kun",
+        artist : "A R Rahman",
+        src : "./music/kun_faya_kun.mp3",
+        imgSrc : "./img/kun_faya_kun.jpg"
+    },
+
+    {
+        name : "Khwaja Mere Khwaja",
+        artist : "A R Rahman",
+        src : "./music/khwaja_mere_khwaja.mp3",
+        imgSrc : "./img/khwaja_mere_khwaja.jpg"
+    },
+
+    {
+        name : "Agar Tum Sath Ho",
+        artist : "Arijit Singh & Alka Yagnik",
+        src : "./music/agar_tum_sath_ho.mp3",
+        imgSrc : "./img/agar_tum_sath_ho.jpg"
+    },
+
+    {
+        name : "Tere Liye",
+        artist : "Sreya Ghosal & Atif Aslam",
+        src : "./music/tere_liye.mp3",
+        imgSrc : "./img/tere_liye.jpg"
     }
+
+    
 ]
 
 

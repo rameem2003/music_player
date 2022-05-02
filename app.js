@@ -35,13 +35,6 @@ const musicList = [
     },
 
     {
-        name : "Over The Horizon",
-        artist : "Samsung",
-        src : "./music/Over_the_horizon.mp3",
-        imgSrc : "./img/over_the_horizon.jpg"
-    },
-
-    {
         name : "ভালবাসবো বাসবো রে বন্ধু",
         artist : "Habib Wahid",
         src : "./music/Bhalobashbo_Bashbo_Re_by_Habib.mp3",
@@ -137,9 +130,15 @@ const musicList = [
         artist : "Sreya Ghosal & Atif Aslam",
         src : "./music/tere_liye.mp3",
         imgSrc : "./img/tere_liye.jpg"
-    }
+    },
 
-    
+    {
+        name : "Over The Horizon",
+        artist : "Samsung",
+        src : "./music/Over_the_horizon.mp3",
+        imgSrc : "./img/over_the_horizon.jpg"
+    },
+
 ]
 
 
